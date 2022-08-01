@@ -1,0 +1,134 @@
+@font-face{
+    font-family: jua;
+    src: url(../폰트/Jua-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: jua;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+a{
+    text-decoration-line: none;
+    color: black;
+}
+.container .header{
+    width: 100%;
+    height: 10%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    background-color: #fad5a6;
+}
+.container .header h1 a{
+    text-decoration: none;
+    font-size: 40px;
+    color: #48120e;
+}
+.container .header h1 a:hover{
+    font-size: 2.7rem;
+}
+.container .header .navbar ul li{
+    display: inline-block;
+    padding-top: 10%;
+}
+.container .header .navbar ul li:nth-child(1){
+    margin-right: 30px;
+}
+.container .header .navbar ul li a{
+    text-decoration: none;
+    color: #48120e;
+    font-size: 20px;
+    font-weight: bold;
+}
+.container .navbar ul li a:hover{
+    font-size: 1.5rem;
+    text-decoration-line: underline;
+}
+.container .main{
+    width: 100%;
+    padding: 0;
+    margin: 40px auto;
+    text-align: center;
+    height: 650px;
+}
+.container .main .title{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+.container .main .title h1{
+    font-size: 40px;
+}
+.container .main .findIdBox{
+    height: 50px;
+    margin-bottom: 5%;
+}
+.container .main #name, #mail{
+    width: 30%;
+    height: 50px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+.container .main #namecheck, #emailcheck{
+    font-size: 15px;
+    color: red;
+    height: 20px;
+    font-weight: bold;
+}
+.container .main button{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.container .main button:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}
+.container .main .idBottom p{
+    display: inline-block;
+    padding: 20px;
+    font-size: 15px;
+}
+.footer{
+    clear: both;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    margin: 120px auto 80px;
+    padding-top: 20px;
+    background-color: #fad5a6;
+    color: #48120e;
+}
+.footer i{
+    font-size: 20px;
+}
+.footer a{
+    color: #48120e;
+}
+.footer i:nth-child(2){
+    margin: 0 20px;
+}
+.footer i:hover{
+    cursor: pointer;
+    font-size: 25px;
+}
+.footer a:hover{
+    font-size: 1.2rem;
+    text-decoration-line: underline;
+}

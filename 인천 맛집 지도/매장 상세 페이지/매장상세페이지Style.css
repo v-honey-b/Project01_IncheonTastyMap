@@ -1,0 +1,114 @@
+   *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .title{
+           
+            width: 40%;
+            margin-top:30px ;
+            margin-left: 50%;
+            
+            transform: translate(-50%);
+        }
+        .title h2{
+            float: left;
+            font-size: 40px;
+            margin-left: 10%;
+        }
+        .title h4{
+            float: right;
+            margin-right: 10%;
+        }
+        li{
+            list-style-type: none;
+        }
+        main{
+           
+            width: 500px;
+            height: 400px;
+            position: relative;
+            margin: 50px auto;
+            overflow: hidden;
+        
+        }
+        
+        .slide{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2400px;
+            transition: left 0.5s ease-out;
+        }
+        .slide li:first-child{
+            margin-left: 100px;
+        }
+        .slide li:not(:last-child){
+            float: left;
+            margin-right: 100px;
+        }
+        .slide li{
+            float: left;
+        }
+        .controller span{
+            position: absolute;
+            background-color: transparent;
+            color: black;
+            text-align: center;
+            border-radius: 50%;
+             padding: 10px 20px;
+            top: 50%;
+            font-size: 1.3em;
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .controller span:hover{
+    background-color: rgba(128, 128, 128, 0.11);}
+    .prev{
+        left: 10px;
+    }
+    .prev:hover{
+    transform: translateX(-10px);
+  }
+  .next{
+    right: 10px;
+  }
+  .next:hover{
+    transform: translateX(10px);
+  }
+  
+   #info{
+    width: 50%;
+    height: 200px;
+    margin-left: 50%;
+    margin-top: -150px;
+    transform:translate(-50%);
+    border: 1px solid black;
+    text-align: center;
+  }
+  #info li{
+    font-size: 20px;
+    margin: 15px;
+  }
+  .tag{
+    width: 50%;
+    margin-left: 50%;
+    transform:translate(-50%);
+    
+  }
+  .tag button{
+    font-size: 30px;
+    margin: 5px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+  }
+  .tag button:hover{
+    cursor: pointer;
+  }
+#like{
+    color : #48120e;
+}
+#heart{
+    color : #48120e;
+}

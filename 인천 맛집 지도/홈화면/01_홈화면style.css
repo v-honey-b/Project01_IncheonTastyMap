@@ -1,0 +1,229 @@
+@font-face{
+    font-family: jua;
+    src: url(../폰트/Jua-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: jua;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+a{
+    text-decoration-line: none;
+    color: black;
+}
+.container .header{
+    width: 100%;
+    height: 10%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 30px;
+    background-color: #fad5a6;
+}
+.container .header h1 a{
+    text-decoration: none;
+    font-size: 40px;
+    color: #48120e;
+}
+.container .header h1 a:hover{
+    font-size: 2.7rem;
+}
+.container .navbar ul li{
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+    padding-top: 10px;
+    /* 세로 정렬 */
+}
+.container .navbar ul li a{
+    text-decoration: none;
+    color: #48120e;
+    font-size: 20px;
+    font-weight: bold;
+}
+.container .navbar ul li a:hover{
+    font-size: 1.5rem;
+    text-decoration-line: underline;
+}
+.container .main{
+    padding-top: 50px;
+    height: 700px;
+    width: 1000px;   
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.container .main a{
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+    float: left;
+    margin-bottom: 50px;
+}
+.container .main a::before{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: all 0.2s;
+    opacity: 0;
+    z-index: 1;
+    border-radius: 50%;
+}
+.container .main .korean::after{
+    display: inline-block;
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    content: "한식";
+    padding: 5px 20px;
+    border: 4px solid #edfafd;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #edfafd;
+    transform: translateX(-50%);
+    transition: all 0.2s;
+    opacity: 0;
+    z-index: 2;
+}
+.container .main .wetern::after{
+    display: inline-block;
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    content: "양식";
+    padding: 5px 20px;
+    border: 4px solid #edfafd;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #edfafd;
+    transform: translateX(-50%);
+    transition: all 0.2s;
+    opacity: 0;
+    z-index: 2;
+}
+.container .main .japanese::after{
+    display: inline-block;
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    content: "일식";
+    padding: 5px 20px;
+    border: 4px solid #edfafd;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #edfafd;
+    transform: translateX(-50%);
+    transition: all 0.2s;
+    opacity: 0;
+    z-index: 2;
+}
+.container .main .chinese::after{
+    display: inline-block;
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    content: "중식";
+    padding: 5px 20px;
+    border: 4px solid #edfafd;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #edfafd;
+    transform: translateX(-50%);
+    transition: all 0.2s;
+    opacity: 0;
+    z-index: 2;
+}
+.container .main .flour::after{
+    display: inline-block;
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    content: "분식";
+    padding: 5px 20px;
+    border: 4px solid #edfafd;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #edfafd;
+    transform: translateX(-50%);
+    transition: all 0.2s;
+    opacity: 0;
+    z-index: 2;
+}
+.container .main .cafe::after{
+    display: inline-block;
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    content: "카페";
+    padding: 5px 20px;
+    border: 4px solid #edfafd;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #edfafd;
+    transform: translateX(-50%);
+    transition: all 0.2s;
+    opacity: 0;
+    z-index: 2;
+}
+.container .main a:hover::before,
+.container .main a:hover::after{
+    opacity: 0.6;
+}
+.container .main a img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.container .main a:nth-child(3n+2){
+    margin: 0 50px;
+}
+.footer{
+    clear: both;
+    height: 10%;
+    text-align: center;
+    margin: 120px auto 80px;
+    padding-top: 35px;
+    background-color: #fad5a6;
+    color: #48120e;
+}
+.footer i{
+    font-size: 20px;
+}
+.footer a{
+    color: #48120e;
+}
+.footer i:nth-child(2){
+    margin: 0 20px;
+}
+.footer i:hover{
+    cursor: pointer;
+    font-size: 25px;
+}
+.footer a:hover{
+    font-size: 1.2rem;
+    text-decoration-line: underline;
+}

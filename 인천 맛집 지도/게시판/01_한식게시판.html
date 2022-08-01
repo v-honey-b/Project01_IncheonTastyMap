@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/인천 맛집 지도/홈화면/01_홈화면style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="/인천 맛집 지도/게시판/01_한식게시판style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+   
+
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <!-- header -->
+            <div class="header">
+                <h1><a href="/인천 맛집 지도/홈화면/01_홈화면.html">인천 맛집 지도</a></h1>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="/인천 맛집 지도/로그인/01_로그인.html">LOG IN</a></li>
+                        <li><a href="/인천 맛집 지도/회원가입/01_회원가입.html">JOIN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 메인 이미지 -->
+        <div class="mainImg">
+            
+            <img src="/인천 맛집 지도/이미지/한식1.jfif" alt="">
+        </div>
+        </header>
+        <form action="">
+            
+        <main>
+            
+        <!-- 글 목록 리스트-->
+        <div class="list">
+            <a href="/인천 맛집 지도/매장 상세 페이지/매장상세페이지.html" target="_blank" onclick="countv()">
+                <img src="/인천 맛집 지도/이미지/김치찌개.jpg" alt="">
+                <div class="store">
+                    <h5 id="storeName">백채 김치찌개</h5>
+                </div>
+            </a>
+            <ul>
+                <li id="viewCount">0</li>
+                <li id="writer">작성자</li>
+                <li id="writeDate"></li>
+            </ul>
+            
+        </div>
+
+    
+       
+
+
+
+
+
+        <div class="list">
+            <a href="#" onclick="countv2()">
+                <img src="/인천 맛집 지도/이미지/계란말이.jpg" alt="" >
+                <div class="store">
+                    <h5 id="storeName">이젠계란</h5>
+                </div>
+            </a>
+            <ul>
+                <li id="viewCount2">0</li>
+                <li id="writer">작성자</li>
+                <li id="writeDate">날짜</li>
+            </ul>
+            
+
+
+
+        </div>
+        <div class="list">
+            <a href="#" onclick="countv3()" >
+                <img src="/인천 맛집 지도/이미지/불고기.jpg" alt="">
+                <div class="store">
+                    <h5 id="storeName">언양불고기</h5>
+                </div>
+            </a>
+            <ul>
+                <li id="viewCount3">0</li>
+                <li id="writer">작성자</li>
+                <li id="writeDate">날짜</li>
+            </ul>
+            
+        </div>
+        <div class="list">
+            <a href="#" onclick="countv4()" >
+                <img src="/인천 맛집 지도/이미지/뼈해장국.jpg" alt="">
+                <div class="store">
+                    <h5 id="storeName">뚝배기</h5>
+                </div>
+            </a>
+            <ul>
+                <li id='viewCount4'>0</li>
+                <li id="writer">작성자</li>
+                <li id="writeDate">날짜</li>
+            </ul>
+            
+        </div>
+        
+    </main>
+    <!-- 검색창 -->
+    <div class="box">
+        
+        <div class="searchBox">   
+            <input type="text" id="search">
+            <button type="button" onclick="searchBtn()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            
+            <a href="/인천 맛집 지도/작성페이지/글쓰기페이지.html">
+                <i class="fa-solid fa-pen"></i>
+            </a>
+            
+            
+        </div>
+        <div class="page">
+            <ul class="pagination">
+                <li class="first"><a href="#">처음페이지</a></li>
+                <li class="left"><a href="#"><<</a></li>
+                <li class="firstNum"><a href="#">1</a></li>
+                <li class="pageNum"><a href="#">2</a></li>
+                <li class="pageNum"><a href="#">3</a></li>
+                <li class="pageNum"><a href="#">4</a></li>
+                <li class="pageNum"><a href="#">5</a></li>
+                <li class="right"><a href="#">>></a></li>
+                <li class="last"><a href="#">끝페이지</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-instagram"></i>
+        <a href="/인천 맛집 지도/가이드라인/01_가이드라인.html">자주하는 질문</a>
+    </div>
+</form>
+</body>
+</div>
+<script>
+ if(localStorage.getItem('date')){
+    document.getElementById('writeDate').innerHTML = localStorage.getItem('date');
+ }
+
+
+ let count1 = 0; 
+ let count2 = 0; 
+ let count3 = 0; 
+ let count4 = 0; 
+ function countv(){
+    count1++;
+    document.getElementById('viewCount').innerHTML=count1;
+}
+function countv2(){
+    count2++;
+    document.getElementById('viewCount2').innerHTML=count2;
+}
+function countv3(){
+    count3++;
+    document.getElementById('viewCount3').innerHTML=count3;
+}
+function countv4(){
+    count4++;
+    document.getElementById('viewCount4').innerHTML=count4;
+}
+</script>
+</html>

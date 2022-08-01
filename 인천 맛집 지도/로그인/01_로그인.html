@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/인천 맛집 지도/로그인/01_로그인style.css">
+    
+    <script src="/인천 맛집 지도/로그인/01_로그인.js"></script>
+    <title>로그인</title>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="header">
+            <h1><a href="/인천 맛집 지도/홈화면/01_홈화면.html">인천 맛집 지도</a></h1>
+            <div class="navbar">
+                <ul>
+                    <li><a href="/인천 맛집 지도/로그인/01_로그인.html">LOG IN</a></li>
+                    <li><a href="/인천 맛집 지도/회원가입/01_회원가입.html">JOIN</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- main -->
+        <form action="">
+            <div class="main">
+                <div class="title">
+                    <h1>로그인</h1>
+                </div>
+                <div class="loginBox">
+                    <input type="text" name="id" id="id" placeholder="아이디">
+                    <div class="idCheck"></div>
+                </div>
+                <div class="loginBox">
+                    <input type="password" name="pass" id="pass" placeholder="비밀번호">
+                    <div class="passCheck"></div>
+                </div>
+                <div class="sub">
+                    <button type="button" class="btn" onclick="loginCheck()">로그인</button>
+                </div>
+                <div class="loginBoxBottom">
+                    <p><a href="/인천 맛집 지도/로그인/02_비밀번호찾기.html">비밀번호 찾기</a></p>
+                    <p><a href="/인천 맛집 지도/로그인/03_아이디찾기.html">아이디 찾기</a></p>
+                    <p><a href="/인천 맛집 지도/회원가입/01_회원가입.html">회원가입</a></p>
+                </div>
+            </div>
+        </form>
+        <!-- footer -->
+        <div class="footer">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-instagram"></i>
+            <a href="/인천 맛집 지도/가이드라인/01_가이드라인.html">가이드 라인</a>
+        </div>
+    </div>
+</body>
+</html>
